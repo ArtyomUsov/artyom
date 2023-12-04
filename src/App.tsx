@@ -4,9 +4,9 @@ import Profile from "./Components/Profile";
 
 function App() {
   return (
-    <>
+    <div className="profile">
       <Profile />
-    </>
+    </div>
   );
 }
 

@@ -7,12 +7,12 @@ import ProfileHobbies from "./ProfileHobbies";
 
 export default function Profile() {
   return (
-    <>
+    <div className="content">
       <ProfilePicture />
       <ProfileName />
       <ProfileBio />
       <ProfileCitation />
       <ProfileHobbies />
-    </>
+    </div>
   );
 }
