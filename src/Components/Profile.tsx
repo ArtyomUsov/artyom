@@ -1,18 +1,35 @@
 import React from "react";
-import ProfilePicture from "./ProfilePicture";
-import ProfileName from "./ProfileName";
-import ProfileBio from "./ProfileBio";
-import ProfileCitation from "./ProfileCitation";
-import ProfileHobbies from "./ProfileHobbies";
+// import React, { useState } from "react";
+import { UserDataType } from "../api/userData";
 
-export default function Profile() {
+const Profile = ({
+  picture,
+  name,
+  bio,
+  citation,
+  hobbies,
+}: Omit<UserDataType, "id">) => {
+  // const [currentCount, setCurrentCount] = useState(count);
+
+  // const decrementCount = () => {
+  //   if (currentCount) {
+  //     setCurrentCount(currentCount - 1);
+  //   } else {
+  //     alert("Товар закончился");
+  //   }
+  // };
   return (
-    <div className="content">
-      <ProfilePicture />
-      <ProfileName />
-      <ProfileBio />
-      <ProfileCitation />
-      <ProfileHobbies />
+    // <div className={s.container}>
+    <div>
+      <img src={picture} alt="" />
+      <h3>{name}</h3>
+      <p>{bio}</p>
+      <h4>{citation}</h4>
+      <h3>Хобби:</h3>
+      <p>{hobbies}</p>
+      {/* <button onClick={decrementCount}></button> */}
     </div>
   );
-}
+};
+
+export default Profile;
