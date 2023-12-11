@@ -1,0 +1,35 @@
+body {
+  background: linear-gradient(to right, orange, darkorange);
+}
+.app {
+  width: 100wv;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+h1,
+h3 {
+  color: white;
+}
+form {
+  background: white;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+input,
+select,
+button {
+  margin: 5px;
+}
+
+.songList {
+  background: white;
+  padding: 20px;
+  height: 500px;
+}
+
+hr {
+  margin: 10px 0;
+}
