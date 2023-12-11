@@ -1,12 +1,13 @@
 import React from "react";
-import "./App.module.css";
 import UserList from "./Components/UserList";
+import Counter from "./Components/Counter";
 
 function App() {
   return (
-    <div className="profile">
+    <>
       <UserList />
-    </div>
+      <Counter />
+    </>
   );
 }
 

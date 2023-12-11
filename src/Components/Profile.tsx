@@ -1,6 +1,6 @@
 import React from "react";
-// import React, { useState } from "react";
 import { UserDataType } from "../api/userData";
+import styles from "./Profile.module.css";
 
 const Profile = ({
   picture,
@@ -9,25 +9,14 @@ const Profile = ({
   citation,
   hobbies,
 }: Omit<UserDataType, "id">) => {
-  // const [currentCount, setCurrentCount] = useState(count);
-
-  // const decrementCount = () => {
-  //   if (currentCount) {
-  //     setCurrentCount(currentCount - 1);
-  //   } else {
-  //     alert("Товар закончился");
-  //   }
-  // };
   return (
-    // <div className={s.container}>
-    <div>
-      <img src={picture} alt="" />
+    <div className={styles.content}>
+      <img src={picture} alt="Profile photography" />
       <h3>{name}</h3>
       <p>{bio}</p>
-      <h4>{citation}</h4>
+      <h4>"{citation}"</h4>
       <h3>Хобби:</h3>
       <p>{hobbies}</p>
-      {/* <button onClick={decrementCount}></button> */}
     </div>
   );
 };
