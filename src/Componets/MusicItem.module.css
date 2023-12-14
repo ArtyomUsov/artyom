@@ -1,0 +1,22 @@
+.songList {
+  background: white;
+  display: grid;
+  grid-template-columns: 320px 320px 220px;
+  padding: 5px;
+}
+.songList > div {
+  align-self: center;
+  font-size: 22px;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+.songList > div:nth-child(2) {
+  text-align: center;
+}
+.songList > div:last-child {
+  text-align: right;
+}
+hr {
+    border: none;
+    border-bottom: 1px solid #ccc;
+}

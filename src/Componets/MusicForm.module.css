@@ -1,0 +1,64 @@
+body {
+  background: linear-gradient(to right, orange, darkorange);
+}
+.app {
+  width: 100wv;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+.songList {
+  background: white;
+  padding: 10px;
+  border: solid 1px #ccc;
+}
+h1,
+h3 {
+  color: white;
+}
+h1 {
+  font-size: 48px;
+  padding-bottom: 10px;
+}
+h3 {
+  font-size: 24px;
+  font-weight: 500;
+  padding-bottom: 60px;
+}
+.filter {
+  display: flex;
+  justify-content: space-between;
+}
+input,
+select,
+button {
+  padding: 7px;
+  border-radius: 7px;
+  border: solid 1px #ccc;
+  font-size: 20px;
+  font-weight: 500;
+}
+input,
+button,
+select,
+form {
+  margin-bottom: 27px;
+}
+input {
+  width: 250px;
+  color: #ccc;
+}
+select {
+  width: 200px;
+}
+button {
+  background-color: blue;
+  color: white;
+}
+.form {
+  background: white;
+  padding: 27px;
+  margin-bottom: 20px;
+  border-radius: 7px;
+}
